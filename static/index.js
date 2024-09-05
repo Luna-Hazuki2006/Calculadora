@@ -20,7 +20,8 @@ function numerar() {
         operador.type = 'button'
         operador.value = esto
         operador.onclick = () => {
-            if (!lista.includes(calculo.value.split(-1))) {
+            if (!lista.includes(String(calculo.value).charAt(calculo.value.length - 1)) && 
+                (calculo.value.length != 0 || (calculo.value.length == 0 && esto == '-'))) {
                 calculo.value += esto
             }
             console.log(esto);
