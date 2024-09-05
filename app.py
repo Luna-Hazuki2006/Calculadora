@@ -15,4 +15,5 @@ async def obtener(request : Request):
     return templates.TemplateResponse('index.html', {'request': request})
 
 @app.post('/calculado')
-async def mandar(request : Request)
+async def mandar(request : Request): 
+    pass
