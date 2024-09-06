@@ -14,7 +14,14 @@ function numerar() {
         }
         numeros.appendChild(numero)
     }
-    let lista = ['+', '-', '*', '/']
+    let coma = document.createElement('input')
+    coma.type = 'button'
+    coma.value = ','
+    coma.onclick = () => {
+        
+    }
+    numeros.appendChild(coma)
+    let lista = ['+', '-', '*', '/', '^', '√']
     for (const esto of lista) {
         let operador = document.createElement('input')
         operador.type = 'button'
